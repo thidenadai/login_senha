@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 12:35:37 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8yMjsyMDIzLTA0LTEyOyIxMjoyNzo1MCAiOzI0MDk="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8yMjsyMDIzLTA0LTEyOyIxMjozNTozNyAiOzE7MjUyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usuario" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="loop" type="Boolean" array="False" size=""/>
+            <assign variable="loop" expression="true"/>
+            <while expression="loop">
+                <input variable="usuario"/>
+                <input variable="senha"/>
+                <if expression="usuario==&quot;thiago&quot;">
+                    <then>
+                        <if expression="senha==&quot;1234&quot;">
+                            <then>
+                                <output expression="&quot;usuario e senha ok&quot;" newline="True"/>
+                                <assign variable="loop" expression="false"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;usuario ou senha incorretos&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

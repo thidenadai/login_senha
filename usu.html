@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function faça() {
+    var usuario;
+    var senha;
+    var loop;
+    
+    loop = true;
+    do {
+        senha = window.prompt('Enter a value for senha');
+        usuario = window.prompt('Enter a value for usuario');
+        if (usuario == "thiago") {
+            if (senha == "1234") {
+                window.alert("usuario e senha ok");
+            }
+        } else {
+            window.alert("usuario e senha incorretos");
+        }
+    } while (loop == true);
+}
+function enquanto() {
+    var usuario;
+    var senha;
+    var loop;
+    
+    loop = true;
+    while (loop) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "thiago") {
+            if (senha == "1234") {
+                window.alert("usuario e senha ok");
+                loop = false;
+            }
+        } else {
+            window.alert("usuario ou senha incorretos");
+        }
+    }
+}
+
+</script>
+<button onclick="faça()">faça</button>
+<button onclick="enquanto()">enquanto</button>
+</body> {}
+</html>
